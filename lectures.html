@@ -79,14 +79,14 @@ permalink: /lectures.html
         <div class="panel-body">
           <ul>
             <li>This is a tentative class outline and is subject to change throughout the semester.</li>
-            <li>Regular lectures will be Tue & Th 1:00PM - 2:15PM, <a href="https://www.umass.edu/energy/map.html">Thompson Hall</a>, Room 106.</li>
+            <li>Regular lectures will be Tue & Th 4:00PM - 5:15PM, Computer Science Labs E110 (new CS building).</li>
             <li>There will be a few optional discussion sections organized by the TAs on Fridays (shown in green)</li>
             <li>Slides will be finalized after the lecture and Echo360 recordings accessible via <a href="https://umamherst.instructure.com/courses/24006">Canvas</a>.</li>
           </ul>
         </div>
       </div>
         <div class="panel panel-default">
-{% assign start = '03-09-2024 10:00:00' | date: '%s' %}
+{% assign start = '29-01-2026 10:00:00' | date: '%s' %}
 {% assign delta = 2 | times: 86400 %}
 {% assign release_day = site.time | date: '%s' | plus: delta %}
 {% assign cur = 0 | times: 86400 | plus: start %}
@@ -107,7 +107,7 @@ permalink: /lectures.html
         {% endif %}
       </td>
     </tr>
-    {% assign cur = 2 | times: 86400 | plus: start %}
+    {% assign cur = 5 | times: 86400 | plus: start %}
     <tr>
       <td>Lecture</td> <!-- Lecture 2 -->
       <td>{{ cur | date: "%A, %b %-d"}}</td>
@@ -129,7 +129,6 @@ permalink: /lectures.html
   <tr>
     <td>Lecture</td> <!-- Lecture 3 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <!-- <td>To be announced</td> -->
 
     <td>Optimization
       <ul>
@@ -143,7 +142,7 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 9 | times: 86400 | plus: start %}
+  {% assign cur = 12 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 4 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
@@ -162,7 +161,7 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  <tr class="success">
+  <!-- <tr class="success">
     <td>Optional discussion</td>
     <td>Friday, Sep 13, 11-12pm, CS 142 </td>
     <td>Python setup, Google collab, Basics of Python and Numpy</td>
@@ -173,7 +172,7 @@ permalink: /lectures.html
     </td>
     <td>
     </td>
-  </tr>
+  </tr> -->
   {% assign cur = 14 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 5 -->
@@ -196,7 +195,7 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 16 | times: 86400 | plus: start %}
+  {% assign cur = 19 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 6 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
@@ -220,7 +219,7 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  <tr class="success">
+  <!-- <tr class="success">
     <td>Optional discussion</td>
     <td> Friday, Sep 20, 11-12pm, CS 142 </td>
     <td>Reviewing the chain rule, Applying the chain rule to vectors</td>
@@ -229,14 +228,29 @@ permalink: /lectures.html
       <a href="https://docs.google.com/presentation/d/1EEk-iBsHCcxT6BhyCC_TxbCLSZSyqIJRGb4fF3EvXbk/edit#slide=id.p1">[slides]</a>
       {% endif %}
     </td>
-  </tr>
+  </tr> -->
   {% assign cur = 21 | times: 86400 | plus: start %}
+  <tr class="active">
+    <td></td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
+    <td>
+      No class, Monday schedule<br>
+    </td>
+    <td>
+      {% if release_day >= cur %}
+      {% endif %}
+    </td>
+  </tr>
+
+  {% assign cur = 26 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 7 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training neural networks<br>
-        Activation Functions<br>
+        Training neural networks I<br>
+        <ul>
+          <li>Activation functions</li>
+        </ul>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -250,14 +264,16 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 23 | times: 86400 | plus: start %}
+  {% assign cur = 28 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 8 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Training neural networks II <br>
-        Weight initialization<br>
-        Batch normalization
+        <ul>
+          <li>Weight initialization</li>
+        <li>Batch normalization</li>
+          </ul>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -270,22 +286,27 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  <tr class="success">
+  <!-- <tr class="success">
     <td>Optional discussion</td>
     <td> Friday, Sep 27, 11-12pm, CS 142 </td>
     <td>Vector, Matrix, and Tensor Derivatives</td>
     <td>
       <a href="https://drive.google.com/file/d/1CI2tVHJlA6FbPy1Vge_Vv1_DuNFnnFhv/view">[slides]</a>
     </td>
-  </tr>
-  {% assign cur = 28 | times: 86400 | plus: start %}
+  </tr> -->
+  {% assign cur = 33 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 9 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Project I<br>
-      Expectations and timeline<br>
-      Overview of projects by the TAs<br>
+    Training neural networks III <br>
+    <ul>
+      <li>Hyperparameter optimization<br>
+      <li>Model ensembles
+      <li>Dropout
+    </ul>
+    Convolutional neural networks<br>
+
     </td>
     <td>
       {% if release_day >= cur %}
@@ -299,13 +320,14 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 30 | times: 86400 | plus: start %}
+  {% assign cur = 35 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 10 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Project II<br>
-      Work on project proposal in class<br>
+      Projects<br>
+      Expectations and timeline<br>
+      Overview of projects by the TAs<br>
       <!--Training neural networks<br>
       Ensembles, dropout<br>
       Convolutional neural neoworks<br> -->
@@ -315,23 +337,21 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  <tr class="success">
+  <!-- <tr class="success">
     <td>Optional discussion</td>
     <td> Friday, Oct 4, 11-12pm, CS 142 </td>
     <td>Batch normalization</td>
     <td>
        <a href="{{site.baseurl}}/docs/batch_normalization.pdf">[slides]</a><br>
     </td>
-  </tr>
-  {% assign cur = 35 | times: 86400 | plus: start %}
+  </tr> -->
+  {% assign cur = 40 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Training neural networks III <br>
-      Hyperparameter optimization<br>
-      Model ensembles, dropout<br>
-      Convolutional neural networks<br>
+      Convnets for spatial localization I:<br>
+      Object detection<br>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -339,12 +359,13 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 37 | times: 86400 | plus: start %}
+  {% assign cur = 42 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>  <!-- Lecture 11 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Guest lecture: <a href="https://xiaolonw.github.io/">Xiaolong Wang</a> (UIUC)<br>
+      Convnets for spatial localization I:<br>
+      Image segmentation<br>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -353,65 +374,41 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 42 | times: 86400 | plus: start %}
+  {% assign cur = 47 | times: 86400 | plus: start %}
   <tr class="active">
     <td></td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
     <td>
-      No class, Monday schedule<br>
+      No class, Spring break<br>
     </td>
     <td>
       {% if release_day >= cur %}
-      <!--<a href="https://echo360.org/media/7280e621-c56f-412c-aa5b-e23db734c1c4/public">[lecture
-      recording]</a><br>
-      <a href="{{site.baseurl}}/docs/lecture11fall2023.pdf">[slides]</a><br>
-        <a href="https://arxiv.org/abs/1512.03385">ResNet</a> (optional)<br>
-	<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf">FCN</a> (optional)<br>-->
-      {% endif %}
-    </td>
-  </tr>
-  {% assign cur = 44 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
-    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
-    <td>
-      Convnets for spatial localization I:<br>
-      Object detection<br>
-    </td>
-    <td>
-      {% if release_day >= cur %}
-	<a href="{{site.baseurl}}/docs/lecture12fall2024.pdf">[slides]</a>
       {% endif %}
     </td>
   </tr>
   {% assign cur = 49 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
-    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
+  <tr class="active">
+    <td></td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
     <td>
-      Convnets for spatial localization II:<br>
-      Image segmentation<br>
+      No class, Spring break<br>
     </td>
     <td>
       {% if release_day >= cur %}
       {% endif %}
-      <a href="{{site.baseurl}}/docs/lecture13fall2024.pdf">[slides]</a>
     </td>
   </tr>
-
-  {% assign cur = 51 | times: 86400 | plus: start %}
+  {% assign cur = 54 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Guest Lecture: <a href="https://vision.cs.yale.edu/members/alex-wong.html">Alex Wong</a> (Yale)<br>
-      The know-how of multimodal depth perception
+      Understanding and visualizing convnets<br>
     </td>
     <td>
       {% if release_day >= cur %}
-        <!--<a href="https://echo360.org/media/62f665cb-683c-44ed-9cc4-242e00b97845/public">[lecture recording]</a><br>
-        <a href="{{site.baseurl}}/docs/lecture14fall2023.pdf">[slides]</a><br>
-	<a href="notes/understanding-cnn/">[visualization notes]</a><br>-->
+      <a href="{{site.baseurl}}/docs/lecture14fall2024.pdf">[slides]</a><br>
+      <a href="{{site.baseurl}}/notes/understanding-cnn/">[visualization notes]</a><br>
       {% endif %}
     </td>
   </tr>
@@ -420,23 +417,19 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
     <td>
-      Understanding and visualizing convnets<br>
+      Adversarial examples, texture synthesis, style transfer
     </td>
     <td>
       {% if release_day >= cur %}
       {% endif %}
-      <a href="{{site.baseurl}}/docs/lecture14fall2024.pdf">[slides]</a><br>
-      <a href="https://echo360.org/media/62f665cb-683c-44ed-9cc4-242e00b97845/public">[lecture recording, 2023]</a>; this year's version has missing audio<br>
-      <a href="{{site.baseurl}}/notes/understanding-cnn/">[visualization notes]</a><br>
       </td>
   </tr>
-  {% assign cur = 58 | times: 86400 | plus: start %}
+  {% assign cur = 61 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Guest lecture: <a href="http://boqinggong.info/">Boqing Gong</a> (Google, BU)<br>
-      From domain adaptation to videoprism
+      Recurrent networks
     </td>
     <td>
       {% if release_day >= cur %}
@@ -446,10 +439,10 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 63 | times: 86400 | plus: start %}
   <tr class="active">
-    <td></td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      No class, Election Day <br>
+      Transformers I
     </td>
     <td>
       {% if release_day >= cur %}
@@ -459,12 +452,12 @@ permalink: /lectures.html
       <a href="{{site.baseurl}}/notes/gan/">[GAN Notes]</a><br> -->
       </td>
   </tr>
-  {% assign cur = 65| times: 86400 | plus: start %}
+
+  {% assign cur = 68| times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>
-      Adversarial examples, Neural texture synthesis and style transfer
+    <td>Transformers II
     </td>
     <td>
       {% if release_day >= cur %}
@@ -472,45 +465,46 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 70 | times: 86400 | plus: start %}
+  {% assign cur = 70| times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>
-      Recurrent neural networks
+    <td>Self-supervised learning I
     </td>
     <td>
-      <!--<a href="https://echo360.org/media/eb9d4cef-f36a-4328-80ab-8da583265544/public">[lecture recording]</a><br>-->
-      <a href="{{site.baseurl}}/docs/lecture16fall2024.pdf">[slides]</a>
+      {% if release_day >= cur %}
+	     <a href="{{site.baseurl}}/docs/lecture15fall2024.pdf">[slides]</a><br>
+      {% endif %}
     </td>
   </tr>
-  {% assign cur = 72 | times: 86400 | plus: start %}
+  {% assign cur = 75 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Transformers
+      Self-supervised learning II
     </td>
     <td>
+      {% if release_day >= cur %}
       <a href="{{site.baseurl}}/docs/lecture17fall2024.pdf">[slides]</a>
+      {% endif %}
     </td>
   </tr>
+
   {% assign cur = 77 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture</td>
+    <td></td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>Self-supervised learning</td>
+    <td><b>Midterm in class</b>
     <td>
-      <a href="{{site.baseurl}}/docs/lecture18fall2024.pdf">[slides]</a><br>
     </td>
   </tr>
-  {% assign cur = 79 | times: 86400 | plus: start %}
+  {% assign cur = 82 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Guest lecture: <a href="https://chensun.me/">Chen Sun</a> (Brown)<br>
-      Title: Grounding deep generative models in the physical world
+      Generative models
     </td>
     <td>
       {% if release_day >= cur %}
@@ -522,7 +516,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      No regular class, work on projects
+      Generative models
     </td>
     <td>
       {% if release_day >= cur %}
@@ -531,12 +525,12 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 86 | times: 86400 | plus: start %}
+  {% assign cur = 89 | times: 86400 | plus: start %}
   <tr class="active">
-    <td></td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      No class, Thanksgiving Break
+      Multi-modal learning
     </td>
     <td>
     </td>
@@ -546,7 +540,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Project presentations, Group 1
+      Multi-modal learning
     </td>
     <td>
       {% if release_day >= cur %}
@@ -554,12 +548,12 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 93 | times: 86400 | plus: start %}
+  {% assign cur = 96 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Project presentations, Group 2
+      Project presentations (tentative)
     </td>
     <td>
       {% if release_day >= cur %}
@@ -572,7 +566,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Project presentations, Group 3
+      Project presentations (tentative)
     </td>
     <td>
       {% if release_day >= cur %}
