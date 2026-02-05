@@ -22,8 +22,6 @@ Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/set
 
 The assignment would be using Python = 3.12
 
-**Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
-
 Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
 
 
