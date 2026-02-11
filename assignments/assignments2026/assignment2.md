@@ -1,30 +1,26 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2024/assignment2/
+permalink: /assignments/assignments2026/assignment2/
 ---
 
-In this assignment you will practice writing backpropagation code, and training
-Neural Networks and Convolutional Neural Networks. The goals of this assignment
-are as follows:
+Get the code as a zip file [here](https://cvl-umass.github.io/compsci682-spring-2026/assignments/assignments2026/assignment2.zip). 
 
-- understand **Neural Networks** and how they are arranged in layered
-  architectures
-- understand and be able to implement (vectorized) **backpropagation**
-- implement various **update rules** used to optimize Neural Networks
-- implement **batch normalization** for training deep networks
-- implement **dropout** to regularize networks
-- effectively **cross-validate** and find the best hyperparameters for Neural
-  Network architecture
-- understand the architecture of **Convolutional Neural Networks** and train
-  gain experience with training these models on data
+- [Setup](#setup)
+- [Goals](#goals)
+- [Q1: Fully-connected Neural Network](#q1-fully-connected-neural-network-16-points)
+- [Q2: Batch Normalization](#q2-batch-normalization-34-points)
+- [Q3: Dropout](#q3-dropout-10-points)
+- [Q4: ConvNet on CIFAR-10](#q4-convnet-on-cifar-10-30-points)
+- [Q5: PyTorch](#q5-pytorch-10-points)
+- [Submitting your work](#submitting-your-work)
+
 
 ### Setup
-Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2024/raw/main/assignments/assignments2024/assignment2.zip). 
 
 Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
-The assignment would be using Python = 3.10
+The assignment would be using Python = 3.12
 
 **Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
 
@@ -81,6 +77,19 @@ After you have the CIFAR-10 data, if you are not using colab you should start th
 **NOTE:** If you are working in a virtual environment on OSX, you may encounter
 errors with matplotlib due to the [issues described here](http://matplotlib.org/faq/virtualenv_faq.html). You can work around this issue by starting the Jupyter server using the `start_jupyter_osx.sh` script from the `assignment2` directory; the script assumes that your virtual environment is named `.env`.
 
+### Goals
+In this assignment you will practice writing backpropagation code, and training
+Neural Networks and Convolutional Neural Networks. The goals of this assignment
+are as follows:
+
+- understand **Neural Networks** and how they are arranged in layered architectures
+- understand and be able to implement (vectorized) **backpropagation**
+- implement various **update rules** used to optimize Neural Networks
+- implement **batch normalization** for training deep networks
+- implement **dropout** to regularize networks
+- effectively **cross-validate** and find the best hyperparameters for a Neural Network architecture
+- understand the architecture of **Convolutional Neural Networks** and gain experience with training these models on data
+
 ### Q1: Fully-connected Neural Network (16 points)
 The notebook `FullyConnectedNets.ipynb` will introduce you to our
 modular layer design, and then use those layers to implement fully-connected
@@ -116,11 +125,10 @@ Once you have completed all notebooks and filled out the necessary code, you nee
 
 To make sure everything is working properly, **remember to do a clean run ("Kernel -> Restart & Run All") after you finish work for each notebook** and submit the final version with all the outputs. 
 
-**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you donot include the dataset folder in the zip.
+**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you do not include the dataset folder in the zip.
 
-**2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
+If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`. Alternatively, in any colab notebook you can run the command `!bash collectSubmission.sh`. Make sure to rename the zip to `<UmassID>.zip`.
+
+**2.** Convert all notebooks (`.ipynb` files) into a single PDF file. In colab this can be done by selecting `File -> Print -> Print to PDF`.
 
 **3.** Please submit <UmassID>.zip and the pdf to Gradescope.
-
-If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment2/` to produce a file `<UmassID>.zip`.
-
