@@ -24,7 +24,7 @@ The assignment would be using Python = 3.12
 
 **Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
 
-Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
+Once you have completed all Colab notebooks, proceed to the [submission instructions](#submitting-your-work).
 
 
 **Colab:**
@@ -33,7 +33,7 @@ If using colab, make a new folder, (ex. `cs682`) in google drive and upload the 
 **Download data:**
 Once you have the starter code, you will need to download the CIFAR-10 dataset.
 
-Inside a colab notebook, you can create a new cell (`Insert -> Code cell`) and run the following:
+Inside a colab notebook, there is already a cell where you can run the following:
 
 ```
 %cd ./cs682/datasets
@@ -50,11 +50,11 @@ cd ./cs682/datasets
 
 **Compile the Cython extension:** 
 Convolutional Neural Networks require a very
-efficient implementation. We have implemented of the functionality using
+efficient implementation. We have implemented the functionality using
 [Cython](http://cython.org/); you will need to compile the Cython extension
 before you can run the code. 
 
-Inside a colab notebook, you can create a new cell (`Insert -> Code cell`) and run the following:
+Inside a colab notebook, there is already a cell where you can run the following:
 
 ```
 %cd cs682
