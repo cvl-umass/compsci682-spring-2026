@@ -33,7 +33,7 @@ If using colab, make a new folder, (ex. `cs682`) in google drive and upload the 
 **Download data:**
 Once you have the starter code, you will need to download the CIFAR-10 dataset.
 
-Inside a colab notebook, there is already a cell where you can run the following:
+Inside the colab notebook, there is already a cell where you can run the following:
 
 ```
 %cd ./cs682/datasets
@@ -54,7 +54,7 @@ efficient implementation. We have implemented the functionality using
 [Cython](http://cython.org/); you will need to compile the Cython extension
 before you can run the code. 
 
-Inside a colab notebook, there is already a cell where you can run the following:
+Inside the colab notebook, there is already a cell where you can run the following:
 
 ```
 %cd cs682
