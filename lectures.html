@@ -115,7 +115,8 @@ permalink: /lectures.html
             <li>K-nearest neighbor
             <li>Linear classification
           </ul>
-         Optimization <ul><li>Loss function I</ul></td>
+         Optimization
+         <ul><li>Loss function</ul></td>
       <td>
         {% if release_day >= cur %}
           <a href="{{site.baseurl}}/docs/lecture2spring26.pdf">[slides]</a><br>
@@ -131,7 +132,7 @@ permalink: /lectures.html
 
     <td>Optimization
       <ul>
-        <li>Loss function II
+        <li>Loss function
         <li>Regularization
         <li>Gradient computation
       </ul>
@@ -147,7 +148,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 4 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Optimization:
+      Optimization
       <ul>
       <li>Stochastic gradient descent
       <li>Optimization challenges
@@ -177,12 +178,15 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 5 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Learning rate schedules<br>
+        Optimization<br>
+        <ul><li>Learning rate schedules</li></ul>
         Neural networks<br>
     </td>
     <td>
       {% if release_day >= cur %}
       <a href="{{site.baseurl}}/docs/lecture5spring26.pdf">[slides]</a><br>
+      <a href="notes/neural-networks-1/">[Neural Nets notes 1]</a><br>
+
         <!--<a href="https://echo360.org/media/412c3612-6abb-4e53-a730-ee63a375686e/public">[lecture recording]</a><br>
         <a href="notes/optimization-2/">[backprop notes]</a><br>
         <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
@@ -246,20 +250,19 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 7 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training neural networks I<br>
+        Training neural networks<br>
         <ul>
           <li>Activation functions</li>
+          <li>Data preprocessing</li>
+          <li>Weight initialization</li>
+          <li>Batch normalization</li>
         </ul>
     </td>
     <td>
       {% if release_day >= cur %}
-      <a href="{{site.baseurl}}/docs/lecture7fall2024.pdf">[slides]</a><br>
-      <!--<a href="https://docs.google.com/presentation/d/1IdTE9PBfqJjYed5VWdbuf3qR128D6jztTMhQHE_-RC4/edit?usp=sharing">[slides]</a><br>-->
-	<!--<a href="https://echo360.org/media/39d9a67c-00f8-4d5e-9eb3-3525c2b70488/public">[lecture
-	  recording]</a><br>
-	<a href="{{site.baseurl}}/docs/lecture7fall2023.pdf">[slides]</a><br>
-        <a href="notes/neural-networks-2/">[Neural Nets notes 2]</a><br>
-	<a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a>-->
+      <a href="{{site.baseurl}}/docs/lecture7spring26.pdf">[slides]</a><br>
+      <a href="notes/neural-networks-2/">[Neural Nets notes 2]</a><br>
+     <a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a>
       {% endif %}
     </td>
   </tr>
@@ -268,15 +271,17 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 8 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training neural networks II <br>
+        Training neural networks<br>
         <ul>
-          <li>Weight initialization</li>
-        <li>Batch normalization</li>
-          </ul>
+          <li>Regularization</li>
+          <li>Model ensembles and dropout</li>
+          <li>Data augmentation</li>
+          <li>Hyperparameter search</li>
+        </ul>
     </td>
     <td>
       {% if release_day >= cur %}
-      <a href="{{site.baseurl}}/docs/lecture8fall2024.pdf">[slides]</a><br>
+      <a href="{{site.baseurl}}/docs/lecture7spring26.pdf">[slides]</a><br>
       <a href="notes/neural-networks-2/">[neural nets notes 2]</a><br>
       <a href="https://arxiv.org/abs/1502.03167">[batch norm]</a>
       <!--<a href="https://echo360.org/media/025886f5-b0c0-4550-8245-e5f728872408/public">[lecture recording]</a><br>
@@ -298,14 +303,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 9 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-    Training neural networks III <br>
-    <ul>
-      <li>Hyperparameter optimization<br>
-      <li>Model ensembles
-      <li>Dropout
-    </ul>
-
-
+    Convolutional networks<br>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -324,7 +322,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 10 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Convolutional neural networks<br>
+      Convolutional networks<br>
       <!--Training neural networks<br>
       Ensembles, dropout<br>
       Convolutional neural neoworks<br> -->
@@ -398,7 +396,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Convnets for spatial localization I: object detection<br>
+      Convnets for object detection<br>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -412,7 +410,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
     <td>
-      Convnets for spatial localization II: image segmentation<br>
+      Convnets for image segmentation<br>
     </td>
     <td>
       {% if release_day >= cur %}
