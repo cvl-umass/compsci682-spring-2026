@@ -22,7 +22,7 @@ Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/set
 
 The assignment would be using Python = 3.12
 
-Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
+Once you have completed all Colab notebooks, proceed to the [submission instructions](#submitting-your-work).
 
 
 **Colab:**
