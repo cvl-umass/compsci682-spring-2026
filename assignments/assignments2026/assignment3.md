@@ -1,39 +1,40 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2024/assignment3/
+permalink: /assignments/assignments2026/assignment3/
 ---
 
-**This assignment is due on Tuesday, November 26 at 11:55pm EST.**
+**This assignment is due on Thursday, April 23 at 11:55pm ET.**
 
 Starter code containing Colab notebooks can be downloaded [here](https://github.com/cvl-umass/compsci682-fall-2024/raw/main/assignments/assignments2024/assignment3.zip). Please note that you can finish the homework either using Google Colab or on your local machine.
 
 - [Setup](#setup)
 - [Goals](#goals)
-- [Q1: Image Captioning with Transformers (25 points)](#q1-image-captioning-with-vanilla-rnns)
-- [Q2: Self-Supervised Learning for Image Classification (15 points)](#q2-self-supervised-learning)
-- [Q3: Style Transfer (10 points)](#q3-networ-visualization)
+- [Q1: Image Captioning with Transformers (25 points)](#q1-image-captioning-with-transformers-25-points)
+- [Q2: Self-Supervised Learning for Image Classification (15 points)](#q2-self-supervised-learning-for-image-classification-15-points)
+- [Q3: Style Transfer (10 points)](#q3-style-transfer-10-points)
 - [Submitting your work](#submitting-your-work)
 
 
 ## Setup
-Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment.
 
-In order to do the assignment, you will need to install PyTorch (>=0.4, up to 1.3 as of 10/23/2019, instructions [here](http://pytorch.org/)) depending on which notebooks you decide to complete.
+Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
-If you face difficulty re-using the Python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch-cpu for the example):
+In order to do the assignment, you will need to install PyTorch 2.10 (instructions [here](https://pytorch.org/get-started/locally/)) depending on which notebooks you decide to complete.
+
+If you face difficulty re-using the Python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch cpu for the example):
 
 ```bash
 conda remove --name cs682 --all # delete old environment if there is one
-conda create --name cs682 python=3.10
+conda create --name cs682 python=3.12
 conda activate cs682
-pip install -r requirements.txt
-conda install pytorch torchvision cpuonly -c pytorch
+pip3 install -r requirements.txt
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu # cpu-only pytorch
 ```
 
 **Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
 
-Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
+Once you have completed all Colab notebooks, proceed to the [submission instructions](#submitting-your-work).
 
 ## Goals
 In this assignment, you will implement a transformer model and apply them to image captioning on the COCO dataset. Then you will be introduced to self-supervised learning to automatically learn the visual representations of an unlabeled dataset. Finally, you will explore methods for visualizing the features of a pretrained model on ImageNet, and also this model to implement Style Transfer.
@@ -65,8 +66,7 @@ To make sure everything is working properly, **remember to do a clean run ("Kern
 
 **1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you do not include the dataset folder and the `pretrained_model` folder in the zip.
 
+If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment3/` to produce a file `<UmassID>.zip`.
 **2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
 **3.** Please submit <UmassID>.zip and the pdf to Gradescope.
-
-If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment3/` to produce a file `<UmassID>.zip`.
