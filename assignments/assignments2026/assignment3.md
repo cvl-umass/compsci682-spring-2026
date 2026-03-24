@@ -20,7 +20,7 @@ Starter code containing Colab notebooks can be downloaded [here](https://github.
 
 Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
-In order to do the assignment, you will need to install PyTorch 2.10 (instructions [here](https://pytorch.org/get-started/locally/)) depending on which notebooks you decide to complete.
+In order to do the assignment, you will need to install PyTorch 2.10 (instructions [here](https://pytorch.org/get-started/locally/)).
 
 If you face difficulty re-using the Python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch cpu for the example):
 
@@ -29,7 +29,7 @@ conda remove --name cs682 --all # delete old environment if there is one
 conda create --name cs682 python=3.12
 conda activate cs682
 pip3 install -r requirements.txt
-pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu # cpu-only pytorch
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu # cpu-only pytorch for a linux machine
 ```
 
 **Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
