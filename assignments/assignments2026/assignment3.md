@@ -6,7 +6,7 @@ permalink: /assignments/assignments2026/assignment3/
 
 **This assignment is due on Thursday, April 23 at 11:55pm ET.**
 
-Starter code containing Colab notebooks can be downloaded [here](https://github.com/cvl-umass/compsci682-fall-2024/raw/main/assignments/assignments2024/assignment3.zip). Please note that you can finish the homework either using Google Colab or on your local machine.
+Starter code containing Colab notebooks can be downloaded [here](https://cvl-umass.github.io/compsci682-spring-2026/assignments/assignments2026/assignment3.zip). Please note that you can finish the homework either using Google Colab or on your local machine.
 
 - [Setup](#setup)
 - [Goals](#goals)
