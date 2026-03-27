@@ -20,7 +20,7 @@ Starter code containing Colab notebooks can be downloaded [here](https://cvl-uma
 
 Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
-In order to do the assignment, you will need to install PyTorch 2.10 (instructions [here](https://pytorch.org/get-started/locally/)).
+In order to do the assignment, you will need to install the latest PyTorch (instructions [here](https://pytorch.org/get-started/locally/)).
 
 If you face difficulty re-using the Python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch cpu for the example):
 
