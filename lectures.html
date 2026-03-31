@@ -424,12 +424,12 @@ permalink: /lectures.html
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
 
-      Recurrent networks
+      Understanding and visualizing convnets
     </td>
     <td>
       {% if release_day >= cur %}
+      <a href="{{site.baseurl}}/docs/lecture14spring26.pdf">[slides]</a><br>
       {% endif %}
-      <!--<a href="https://www.cics.umass.edu/event/20231102/mlfl-james-tompkin-brown-university">[talk info]</a>-->
       </td>
   </tr>
   {% assign cur = 63 | times: 86400 | plus: start %}
@@ -452,7 +452,7 @@ permalink: /lectures.html
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>Understanding and visualizing convnets<br>
+    <td>Recurrent networks<br>
     </td>
     <td>
       {% if release_day >= cur %}
