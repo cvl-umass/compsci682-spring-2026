@@ -477,10 +477,19 @@ permalink: /lectures.html
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Self-supervised learning
+      <ul>
+        <li>Supervised vs unsupervised</li>
+        <li>Semi-supervised learning</li>
+        <li>Early methods (e.g., colorization)
+        <li>Contrastive: MOCO, SimCLR
+      </ul>
     </td>
     <td>
       {% if release_day >= cur %}
-      <a href="{{site.baseurl}}/docs/lecture18spring26.pdf">[slides]</a>
+      <a href="{{site.baseurl}}/docs/lecture18spring26.pdf">[slides]</a><br>
+      <a href="https://arxiv.org/pdf/1603.08511">Colorization</a>, <a href="https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Doersch_Unsupervised_Visual_Representation_ICCV_2015_paper.pdf">Context</a>, <a href="https://arxiv.org/abs/1803.07728">Rotation</a> <br>
+      <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.html">MOCO</a>, <a href="https://proceedings.mlr.press/v119/chen20j.html">SimCLR</a>
+
       {% endif %}
     </td>
   </tr>
@@ -490,7 +499,17 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>Self-supervised learning
+      <ul>
+        <li>Non-contrastive: BYOL, DINO</li>
+        <li>Scaling: MAEs and DINOV3
+        <li>Beyond images: video, audio, text, 3D
+      </ul>
     <td>
+      {% if release_day >= cur %}
+      <a href="{{site.baseurl}}/docs/lecture19spring26.pdf">[slides]</a><br>
+      <a href="https://proceedings.neurips.cc/paper/2020/hash/f3ada80d5c4ee70142b17b8192b2958e-Abstract.html">BYOL</a>, <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Caron_Emerging_Properties_in_Self-Supervised_Vision_Transformers_ICCV_2021_paper">DINO</a>, <a href="https://openaccess.thecvf.com/content/CVPR2022/html/He_Masked_Autoencoders_Are_Scalable_Vision_Learners_CVPR_2022_paper">MAE</a>, <a href="https://arxiv.org/abs/2508.10104">DINOV3</a><br>
+      <a href="https://openai.com/index/clip/">CLIP</a>, <a href="https://arxiv.org/abs/2412.14428">WildSAT</a>, <a href="https://arxiv.org/abs/2003.13834">ACD</a>
+      {% endif %}
     </td>
   </tr>
   {% assign cur = 82 | times: 86400 | plus: start %}
@@ -498,7 +517,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Generative models
+      Neural networks for 3D
     </td>
     <td>
       {% if release_day >= cur %}
@@ -510,7 +529,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Generative models
+      Neural networks for 3D
     </td>
     <td>
       {% if release_day >= cur %}
